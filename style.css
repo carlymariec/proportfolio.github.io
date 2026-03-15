@@ -814,12 +814,18 @@ footer .footer-links a:hover {
     gap: 1.25rem;
     border-bottom: 1px solid rgba(108, 99, 255, 0.15);
     transform: translateY(-120%);
-    transition: transform var(--transition);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform var(--transition), opacity var(--transition);
     z-index: 999;
   }
 
   .nav-links.open {
     transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-toggle {
