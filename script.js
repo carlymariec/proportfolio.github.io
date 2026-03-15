@@ -57,10 +57,10 @@ function updateActiveNav() {
 
 // ===== Typed text effect =====
 const typedTexts = [
-  'Paralegal Student',
   'Legal Researcher',
   'Litigation Support Specialist',
-  'Legal Document Specialist'
+  'Legal Document Specialist',
+  'Paralegal Student'
 ];
 let typedIndex = 0;
 let charIndex = 0;
@@ -121,6 +121,18 @@ function toggleScrollTop() {
 scrollTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// ===== Profile photo fallback =====
+// Shows an emoji placeholder if images/profile.jpg has not been uploaded yet.
+const profilePhoto = document.getElementById('profilePhoto');
+const profileEmoji = document.getElementById('profileEmoji');
+
+if (profilePhoto) {
+  profilePhoto.addEventListener('error', () => {
+    profilePhoto.style.display = 'none';
+    if (profileEmoji) profileEmoji.style.display = 'flex';
+  });
+}
 
 // ===== Contact form =====
 const contactForm = document.getElementById('contactForm');
