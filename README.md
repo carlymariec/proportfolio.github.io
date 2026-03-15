@@ -9,7 +9,6 @@ Detail-oriented and research-focused Paralegal Student with a strong foundation 
 *   **Legal Research & Writing:** Proficient in drafting legal memoranda, case briefs, and synthesizing complex case law.
 *   **Litigation Support:** Experienced in civil litigation procedures and criminal justice documentation.
 *   **Technical Proficiency:** Tech-savvy approach to legal databases, document management, and digital security.
-*   **Methodology:** Dedicated to the IRAC (Issue, Rule, Analysis, Conclusion) framework for all legal assignments.
 
 ---
 
