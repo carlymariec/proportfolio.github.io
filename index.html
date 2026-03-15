@@ -1,355 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Carly Marie — Legal Professional. Personal portfolio." />
-  <title>Carly Marie | Paralegal Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Carly Marie | Paralegal Portfolio</title>
+    <style>
+        :root {
+            --deep-purple: #361d32;
+            --teal: #008080;
+            --mustard: #e1ad01;
+            --gray: #f4f4f4;
+            --text: #333;
+        }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--text); margin: 0; padding: 0; background: #fff; }
+        header { background: var(--deep-purple); color: white; padding: 2rem; text-align: center; }
+        nav { background: var(--gray); padding: 1rem; text-align: center; }
+        nav a { margin: 0 15px; color: var(--teal); text-decoration: none; font-weight: bold; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 0 20px; }
+        h2 { color: var(--teal); border-bottom: 2px solid var(--mustard); display: inline-block; }
+        .card { border-left: 5px solid var(--teal); background: var(--gray); padding: 1.5rem; margin-bottom: 1rem; }
+        footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #777; }
+    </style>
 </head>
 <body>
 
-  <!-- ===== Navbar ===== -->
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="nav-container">
-      <a href="#home" class="nav-logo">Carly<span>.</span></a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#assignments">Assignments</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button
-        class="nav-toggle"
-        id="navToggle"
-        aria-label="Toggle navigation"
-        aria-expanded="false"
-        aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+<header>
+    <h1>Carly Marie</h1>
+    <p>Paralegal Student | Research & Litigation Support</p>
+</header>
 
-  <!-- ===== Hero ===== -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-text">
-        <span class="hero-eyebrow">Paralegal Professional</span>
-        <h1 class="hero-name">Carly Marie</h1>
-        <p class="hero-subtitle-line">
-          I am a <span class="typed-wrap"><span class="typed"></span></span>
-        </p>
+<nav>
+    <a href="#about">Philosophy</a>
+    <a href="#work">Coursework</a>
+    <a href="https://github.com/carlymariec/proportfolio.github.io.git">GitHub</a>
+</nav>
 
-        <div class="hero-buttons">
-          <a href="#assignments" class="btn btn-gold">View Assignments</a>
-          <a href="#resume" class="btn btn-outline">My Resume</a>
+<div class="container">
+    <section id="about">
+        <h2>Philosophy of Practice</h2>
+        <p>My approach to the legal profession is rooted in the belief that justice is served through precision, efficiency, and unwavering ethical standards. I view the law as a system of logic. My work—whether drafting legal memoranda or conducting case analysis—is driven by the IRAC method to ensure that every argument is supported by rigorous research and procedural accuracy.</p>
+    </section>
+
+    <section id="work">
+        <h2>Educational Milestones</h2>
+        <div class="card">
+            <h3>Legal Research & Writing</h3>
+            <p>Proficient in IRAC analysis, legal memorandum drafting, and case brief preparation. Focused on clear, concise, and objective legal communication.</p>
         </div>
-        <div class="hero-social">
-          <a href="https://github.com/carlymc" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577
-                0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756
-                -1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304
-                3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931
-                0-1.31.465-2.381 1.235-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23
-                a11.52 11.52 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404 2.29-1.552 3.297-1.23
-                3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.233 1.911 1.233 3.221
-                0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015
-                3.293 0 .322.216.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/>
-            </svg>
-          </a>
-
+        <div class="card">
+            <h3>Core Competencies</h3>
+            <p>Family Law, Civil Litigation, Criminal Justice, and Advanced Legal Technology.</p>
         </div>
-      </div>
-      <div class="hero-image-wrap">
-        <div class="hero-badge-ring">
-          <div class="hero-avatar" role="img" aria-label="Illustration of a legal professional">
-            <span aria-hidden="true">⚖️</span>
-            <span class="visually-hidden">Scales of justice illustration</span>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+</div>
 
-  <!-- ===== About ===== -->
-  <section class="section about" id="about">
-    <div class="container">
-      <h2 class="section-title fade-in">About <span>Me</span></h2>
-      <p class="section-subtitle fade-in">Get to know the person behind the portfolio</p>
-      <div class="section-divider"></div>
-      <div class="about-grid">
-        <div class="about-image-wrap fade-in">
-          <div class="about-highlight-card">
-            <div class="about-icon-circle">⚖️</div>
-            <h3>My Legal Passion</h3>
-            <p>
-              I'm committed to justice and the belief that everyone
-              deserves skilled, compassionate legal support.
-            </p>
-            <div class="card-tag-row">
-              <span class="card-tag">Legal Research</span>
-              <span class="card-tag">Document Drafting</span>
-              <span class="card-tag">Client Advocacy</span>
-            </div>
-          </div>
-        </div>
-        <div class="about-text fade-in">
-          <h3>Hi, I'm Carly Marie!</h3>
-
-          <div class="about-facts">
-            <div class="fact-item">
-              <div class="fact-label">Location</div>
-              <div class="fact-value">United States</div>
-            </div>
-            <div class="fact-item">
-              <div class="fact-label">Availability</div>
-              <div class="fact-value">Open to Opportunities</div>
-            </div>
-            <div class="fact-item">
-              <div class="fact-label">Focus Areas</div>
-              <div class="fact-value">Civil &amp; Family Law</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Education & Skills ===== -->
-  <section class="section education" id="education">
-    <div class="container">
-      <h2 class="section-title fade-in">Education &amp; <span>Skills</span></h2>
-      <p class="section-subtitle fade-in">Legal competencies and skills</p>
-      <div class="section-divider"></div>
-      <div class="edu-grid">
-
-        <div class="edu-card fade-in">
-          <div class="edu-card-icon">📜</div>
-          <h3>Legal Research &amp; Writing</h3>
-          <div class="edu-course">Core Competency</div>
-          <p>Conducting thorough statutory, case law, and secondary source research using Westlaw, LexisNexis, and law libraries. Drafting clear, accurate legal documents.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Westlaw</span>
-            <span class="skill-tag">LexisNexis</span>
-            <span class="skill-tag">Legal Memos</span>
-            <span class="skill-tag">Case Briefs</span>
-            <span class="skill-tag">Shepardizing</span>
-          </div>
-        </div>
-
-        <div class="edu-card fade-in">
-          <div class="edu-card-icon">⚖️</div>
-          <h3>Civil Procedure</h3>
-          <div class="edu-course">Litigation Support</div>
-          <p>Understanding of federal and state court procedures, including pleadings, discovery, motions practice, and trial preparation support.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Pleadings</span>
-            <span class="skill-tag">Discovery</span>
-            <span class="skill-tag">Motions</span>
-            <span class="skill-tag">Court Filing</span>
-            <span class="skill-tag">Docketing</span>
-          </div>
-        </div>
-
-        <div class="edu-card fade-in">
-          <div class="edu-card-icon">📋</div>
-          <h3>Contracts &amp; Torts</h3>
-          <div class="edu-course">Substantive Law</div>
-          <p>Analysis of contract formation, breach, and remedies; tort liability principles including negligence, intentional torts, and strict liability.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Contract Analysis</span>
-            <span class="skill-tag">Tort Law</span>
-            <span class="skill-tag">Liability Review</span>
-            <span class="skill-tag">Case Analysis</span>
-          </div>
-        </div>
-
-        <div class="edu-card fade-in">
-          <div class="edu-card-icon">👨‍👩‍👧</div>
-          <h3>Family Law</h3>
-          <div class="edu-course">Practice Area</div>
-          <p>Marriage, divorce, child custody, support, adoption, and domestic relations matters. Drafting family law pleadings and settlement agreements.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Divorce Pleadings</span>
-            <span class="skill-tag">Custody Agreements</span>
-            <span class="skill-tag">Child Support</span>
-            <span class="skill-tag">Adoption</span>
-          </div>
-        </div>
-
-        <div class="edu-card fade-in">
-          <div class="edu-card-icon">🔒</div>
-          <h3>Criminal Law &amp; Procedure</h3>
-          <div class="edu-course">Practice Area</div>
-          <p>Elements of crimes, defenses, constitutional protections, and criminal procedure from arrest through sentencing. Supporting defense and prosecution teams.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Criminal Procedure</span>
-            <span class="skill-tag">Constitutional Law</span>
-            <span class="skill-tag">Evidence Review</span>
-            <span class="skill-tag">Client Intake</span>
-          </div>
-        </div>
-
-        <div class="edu-card fade-in">
-          <div class="edu-card-icon">🗂️</div>
-          <h3>Document &amp; Case Management</h3>
-          <div class="edu-course">Administrative Skills</div>
-          <p>Organizing and maintaining client files, managing deadlines, preparing court bundles, and using legal practice management software.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Clio</span>
-            <span class="skill-tag">Microsoft Office</span>
-            <span class="skill-tag">File Organization</span>
-            <span class="skill-tag">Deadline Tracking</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Assignments ===== -->
-  <section class="section assignments" id="assignments">
-    <div class="container">
-      <h2 class="section-title fade-in">Recent <span>Assignments</span></h2>
-      <p class="section-subtitle fade-in">Selected legal work samples</p>
-      <div class="section-divider"></div>
-      <div class="assignments-grid">
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Resume ===== -->
-  <section class="section resume-section" id="resume">
-    <div class="container">
-      <h2 class="section-title fade-in">My <span>Resume</span></h2>
-      <p class="section-subtitle fade-in">An overview of my education, experience, and qualifications</p>
-      <div class="section-divider"></div>
-      <div class="resume-inner">
-        <div class="resume-visual fade-in">
-          <div class="resume-icon-wrap">📄</div>
-          <h3>Carly Marie</h3>
-          <p>Legal Professional</p>
-          <a href="#contact" class="btn btn-gold resume-download-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Request Resume
-          </a>
-        </div>
-        <div class="resume-highlights fade-in">
-          <h3>Highlights</h3>
-          <div class="resume-items">
-            <div class="resume-item">
-              <div class="resume-item-icon">📚</div>
-              <div class="resume-item-content">
-                <div class="item-title">Legal Research &amp; Writing</div>
-                <div class="item-sub">Proficient in Westlaw, LexisNexis &amp; Bluebook Citation</div>
-              </div>
-            </div>
-            <div class="resume-item">
-              <div class="resume-item-icon">⚖️</div>
-              <div class="resume-item-content">
-                <div class="item-title">Practice Area Knowledge</div>
-                <div class="item-sub">Civil Litigation · Family Law · Criminal Law · Property Law</div>
-              </div>
-            </div>
-            <div class="resume-item">
-              <div class="resume-item-icon">��️</div>
-              <div class="resume-item-content">
-                <div class="item-title">Case &amp; Document Management</div>
-                <div class="item-sub">Clio, Microsoft Office Suite, Court Filing Systems</div>
-              </div>
-            </div>
-            <div class="resume-item">
-              <div class="resume-item-icon">🤝</div>
-              <div class="resume-item-content">
-                <div class="item-title">Client &amp; Professional Communication</div>
-                <div class="item-sub">Strong written &amp; verbal communication skills</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Contact ===== -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <h2 class="section-title fade-in">Get In <span>Touch</span></h2>
-      <p class="section-subtitle fade-in">Interested in working together? I'd love to hear from you.</p>
-      <div class="section-divider"></div>
-      <div class="contact-grid">
-        <div class="contact-info fade-in">
-          <h3>Let's Connect</h3>
-          <p>
-            Whether you have a question about my background, want to discuss an
-            opportunity, or just want to say hello — my inbox is always open.
-          </p>
-          <div class="contact-items">
-            <div class="contact-item">
-              <div class="contact-item-icon">🐙</div>
-              <div class="contact-item-text">
-                <div class="label">GitHub</div>
-                <div class="value">github.com/carlymc</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="contact-form-wrap fade-in">
-          <form id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Your message..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-gold form-submit">Send Message</button>
-            <div class="form-success" id="formSuccess" role="status" aria-live="polite">
-              ✅ Message sent! I'll get back to you soon.
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Footer ===== -->
-  <footer>
-    <div class="container">
-      <p>Made with <span class="heart">♥</span> by Carly Marie &copy; <span id="year"></span></p>
-      <ul class="footer-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#assignments">Assignments</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <button id="scrollTop" aria-label="Scroll to top">&#8679;</button>
-
-  <script src="script.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<footer>
+    <p>&copy; 2026 Carly Marie. All rights reserved. Secure & Professional.</p>
+</footer>
 
 </body>
 </html>
