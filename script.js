@@ -57,10 +57,9 @@ function updateActiveNav() {
 
 // ===== Typed text effect =====
 const typedTexts = [
-  'Paralegal Student',
   'Legal Researcher',
   'Document Specialist',
-  'Aspiring Attorney\'s Assistant'
+  'Legal Professional'
 ];
 let typedIndex = 0;
 let charIndex = 0;
