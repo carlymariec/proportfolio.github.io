@@ -32,6 +32,8 @@ navLinks.querySelectorAll('a').forEach(link => {
 function updateActiveNav() {
   const sections = document.querySelectorAll('section[id]');
   const scrollPos = window.scrollY + 80;
+  const links = navLinks.querySelectorAll('a');
+  let newActive = null;
 
   sections.forEach(section => {
     const top = section.offsetTop;
@@ -39,13 +41,15 @@ function updateActiveNav() {
     const id = section.getAttribute('id');
     const link = navLinks.querySelector(`a[href="#${id}"]`);
 
-    if (link) {
-      if (scrollPos >= top && scrollPos < top + height) {
-        navLinks.querySelectorAll('a').forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-      }
+    if (link && scrollPos >= top && scrollPos < top + height) {
+      newActive = link;
     }
   });
+
+  if (newActive) {
+    links.forEach(l => l.classList.remove('active'));
+    newActive.classList.add('active');
+  }
 }
 
 // ===== Typed text effect =====
