@@ -36,9 +36,7 @@
   <section class="hero" id="home">
     <div class="hero-content">
       <div class="hero-text">
-        <!-- TODO: Update your title/role below -->
         <span class="hero-eyebrow">Paralegal Professional</span>
-        <!-- TODO: Update your name below -->
         <h1 class="hero-name">Carly Marie</h1>
         <p class="hero-subtitle-line">
           I am a <span class="typed-wrap"><span class="typed"></span></span>
@@ -46,11 +44,10 @@
 
         <div class="hero-buttons">
           <a href="#assignments" class="btn btn-primary">View Assignments</a>
-          <a href="#resume" class="btn btn-outline">My Resume</a>
+          <a href="files/resume/resume.pdf" download="Carly-Marie-Resume.pdf" class="btn btn-outline">Download Resume</a>
         </div>
 
         <div class="hero-social">
-          <!-- TODO: Update your GitHub URL below (or add other social links) -->
           <a href="https://github.com/carlymariec" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577
@@ -68,9 +65,17 @@
       </div>
 
       <div class="hero-image-wrap">
-        <!-- TODO: Replace emoji with your own photo using an <img> tag if desired -->
-        <div class="hero-avatar" role="img" aria-label="Profile photo placeholder">
-          <span aria-hidden="true">⚖️</span>
+        <!--
+          PROFILE PHOTO: Upload images/profile.jpg (or profile.png) to the repository.
+          The photo will appear automatically once the file is there.
+          See FILES.md for instructions.
+        -->
+        <div class="hero-avatar" role="img" aria-label="Carly Marie – Paralegal Professional">
+          <img src="images/profile.jpg"
+               alt="Carly Marie"
+               id="profilePhoto"
+               class="profile-photo" />
+          <span id="profileEmoji" class="profile-emoji-fallback" aria-hidden="true">⚖️</span>
         </div>
       </div>
     </div>
@@ -86,44 +91,43 @@
         <div class="about-image-wrap fade-in">
           <div class="about-highlight-card">
             <div class="about-icon-circle">⚖️</div>
-            <!-- TODO: Update heading and description with your own passion statement -->
-            <h3>My Legal Passion</h3>
+            <h3>My Legal Philosophy</h3>
             <p>
-              Add a short statement about your passion for law and what drives you as a legal professional.
+              Justice is served through precision, efficiency, and unwavering ethical standards.
+              I view the law as a system of logic — approached with objectivity and rigorous application of the IRAC method.
             </p>
             <div class="card-tag-row">
-              <!-- TODO: Update tags to reflect your actual focus areas -->
               <span class="card-tag">Legal Research</span>
-              <span class="card-tag">Document Drafting</span>
-              <span class="card-tag">Client Advocacy</span>
+              <span class="card-tag">Civil Litigation</span>
+              <span class="card-tag">Criminal Justice</span>
             </div>
           </div>
         </div>
 
         <div class="about-text fade-in">
-          <!-- TODO: Update with your name -->
           <h3>Hi, I'm Carly Marie!</h3>
-
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
+            Detail-oriented and research-focused Paralegal Student with a strong foundation in legal analysis,
+            civil litigation, and criminal justice. I leverage technology to streamline legal workflows
+            and ensure procedural accuracy, providing attorneys with clear, actionable data to advocate
+            effectively for their clients.
+          </p>
           <div class="about-facts">
             <div class="fact-item">
-              <div class="fact-label">Location</div>
-              <!-- TODO: Update your location -->
-              <div class="fact-value">Your City, State</div>
+              <div class="fact-label">Focus Areas</div>
+              <div class="fact-value">Civil Litigation · Criminal Justice · Legal Research</div>
             </div>
             <div class="fact-item">
               <div class="fact-label">Availability</div>
-              <!-- TODO: Update your availability status -->
               <div class="fact-value">Open to Opportunities</div>
             </div>
             <div class="fact-item">
-              <div class="fact-label">Focus Areas</div>
-              <!-- TODO: Update your practice focus areas -->
-              <div class="fact-value">Your Practice Areas</div>
+              <div class="fact-label">Methodology</div>
+              <div class="fact-value">IRAC · Objective Analysis · Procedural Accuracy</div>
             </div>
             <div class="fact-item">
-              <div class="fact-label">Education</div>
-              <!-- TODO: Add your school / program -->
-              <div class="fact-value">Your School &amp; Program</div>
+              <div class="fact-label">Tech Skills</div>
+              <div class="fact-value">LexisNexis · MS Office Suite · Adobe Acrobat Pro · vLex</div>
             </div>
           </div>
         </div>
@@ -135,57 +139,59 @@
   <section class="section education" id="education">
     <div class="container">
       <h2 class="section-title fade-in">Education &amp; <span>Skills</span></h2>
-      <!-- TODO: Update subtitle to reflect your background -->
-      <p class="section-subtitle fade-in">Legal competencies and skills</p>
+      <p class="section-subtitle fade-in">Legal competencies and technical proficiencies</p>
       <div class="section-divider"></div>
       <div class="edu-grid">
-
-        <!-- TODO: Replace the cards below with your real courses and skills -->
 
         <div class="edu-card fade-in">
           <div class="edu-card-icon">📜</div>
           <h3>Legal Research &amp; Writing</h3>
           <div class="edu-course">Core Competency</div>
-          <p>Brief description of this skill and how you apply it.</p>
+          <p>Proficient in drafting legal memoranda, case briefs, and synthesizing complex case law using the IRAC method for clear, objective analysis.</p>
           <div class="skill-tags">
-            <span class="skill-tag">Westlaw</span>
             <span class="skill-tag">LexisNexis</span>
+            <span class="skill-tag">vLex</span>
             <span class="skill-tag">Legal Memos</span>
+            <span class="skill-tag">Case Briefs</span>
+            <span class="skill-tag">IRAC Method</span>
           </div>
         </div>
 
         <div class="edu-card fade-in">
           <div class="edu-card-icon">⚖️</div>
-          <h3>Civil Procedure</h3>
+          <h3>Civil Litigation</h3>
           <div class="edu-course">Litigation Support</div>
-          <p>Brief description of this skill and how you apply it.</p>
+          <p>Experienced in civil litigation procedures, including pleadings, discovery, and court filing support to assist attorneys in navigating complex legal proceedings.</p>
           <div class="skill-tags">
             <span class="skill-tag">Pleadings</span>
             <span class="skill-tag">Discovery</span>
             <span class="skill-tag">Court Filing</span>
+            <span class="skill-tag">Case Management</span>
           </div>
         </div>
 
         <div class="edu-card fade-in">
-          <div class="edu-card-icon">📋</div>
-          <h3>Skill / Course Name</h3>
-          <div class="edu-course">Category</div>
-          <p>Brief description of this skill and how you apply it.</p>
+          <div class="edu-card-icon">🔒</div>
+          <h3>Digital Security &amp; Document Management</h3>
+          <div class="edu-course">Technical Proficiency</div>
+          <p>Committed to data privacy, metadata sanitization, and secure document handling. Efficient in remote collaboration and digital document management workflows.</p>
           <div class="skill-tags">
-            <span class="skill-tag">Tag 1</span>
-            <span class="skill-tag">Tag 2</span>
+            <span class="skill-tag">Adobe Acrobat Pro</span>
+            <span class="skill-tag">Metadata Sanitization</span>
+            <span class="skill-tag">Data Privacy</span>
+            <span class="skill-tag">MS Office Suite</span>
           </div>
         </div>
 
         <div class="edu-card fade-in">
           <div class="edu-card-icon">🗂️</div>
-          <h3>Document &amp; Case Management</h3>
-          <div class="edu-course">Administrative Skills</div>
-          <p>Brief description of this skill and how you apply it.</p>
+          <h3>Criminal Justice Documentation</h3>
+          <div class="edu-course">Criminal Law</div>
+          <p>Foundational understanding of criminal justice procedures, case documentation, and the procedural accuracy required to support criminal defense and prosecution work.</p>
           <div class="skill-tags">
-            <span class="skill-tag">Clio</span>
-            <span class="skill-tag">Microsoft Office</span>
-            <span class="skill-tag">Docketing</span>
+            <span class="skill-tag">Criminal Procedure</span>
+            <span class="skill-tag">Case Documentation</span>
+            <span class="skill-tag">Procedural Accuracy</span>
           </div>
         </div>
 
@@ -202,18 +208,41 @@
       <div class="assignments-grid">
 
         <!--
-          TODO: Add your real assignments below. Copy and paste this card template for each item:
-
-          <div class="assignment-card fade-in">
-            <span class="assignment-tag">Category (e.g. Legal Memo)</span>
-            <h3>Assignment Title</h3>
-            <p>Short description of what the assignment covers or demonstrates.</p>
-            <a href="#" class="assignment-link">View Sample &#8599;</a>
-          </div>
+          ASSIGNMENTS: Upload your PDF files to files/assignments/ using the exact names below.
+          Each "View Sample" link will work automatically once the file is uploaded.
+          See FILES.md for the full checklist.
         -->
 
-        <div class="assignments-placeholder fade-in">
-          <p>📂 Your assignments will appear here. Replace this placeholder with your real work samples using the template in the HTML comments above.</p>
+        <div class="assignment-card fade-in">
+          <span class="assignment-tag">Legal Memo</span>
+          <h3>Legal Memorandum – Case Law Analysis</h3>
+          <p>A formal legal memorandum applying the IRAC method to analyze relevant case law and synthesize findings into clear, actionable recommendations.</p>
+          <!-- File: files/assignments/legal-memo.pdf -->
+          <a href="files/assignments/legal-memo.pdf" target="_blank" rel="noopener noreferrer" class="assignment-link">View Sample &#8599;</a>
+        </div>
+
+        <div class="assignment-card fade-in">
+          <span class="assignment-tag">Case Brief</span>
+          <h3>Case Brief – Civil Litigation</h3>
+          <p>Structured case brief outlining the facts, procedural history, legal issues, holding, and reasoning for a significant civil litigation matter.</p>
+          <!-- File: files/assignments/case-brief.pdf -->
+          <a href="files/assignments/case-brief.pdf" target="_blank" rel="noopener noreferrer" class="assignment-link">View Sample &#8599;</a>
+        </div>
+
+        <div class="assignment-card fade-in">
+          <span class="assignment-tag">Legal Research</span>
+          <h3>Statutory Research Report</h3>
+          <p>Comprehensive statutory research using LexisNexis and vLex, identifying applicable statutes and summarizing their relevance to the assigned legal question.</p>
+          <!-- File: files/assignments/statutory-research.pdf -->
+          <a href="files/assignments/statutory-research.pdf" target="_blank" rel="noopener noreferrer" class="assignment-link">View Sample &#8599;</a>
+        </div>
+
+        <div class="assignment-card fade-in">
+          <span class="assignment-tag">Criminal Justice</span>
+          <h3>Criminal Procedure Documentation</h3>
+          <p>Detailed procedural documentation tracing the stages of a criminal case, from arrest through sentencing, with attention to constitutional safeguards.</p>
+          <!-- File: files/assignments/criminal-procedure.pdf -->
+          <a href="files/assignments/criminal-procedure.pdf" target="_blank" rel="noopener noreferrer" class="assignment-link">View Sample &#8599;</a>
         </div>
 
       </div>
@@ -229,48 +258,47 @@
       <div class="resume-inner">
         <div class="resume-visual fade-in">
           <div class="resume-icon-wrap">📄</div>
-          <!-- TODO: Update your name -->
           <h3>Carly Marie</h3>
-          <p>Legal Professional</p>
+          <p>Paralegal Student &amp; Legal Professional</p>
           <!--
-            TODO: Replace the href below with a link to your actual resume file
-            e.g. href="resume.pdf" or a Google Drive / LinkedIn link
+            RESUME: Upload files/resume/resume.pdf to the repository.
+            The download button will link directly to the file once it is uploaded.
+            See FILES.md for instructions.
           -->
-          <a href="#contact" class="btn btn-gold resume-download-btn">
+          <a href="files/resume/resume.pdf" download="Carly-Marie-Resume.pdf" class="btn btn-gold resume-download-btn" id="resumeBtn">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Request Resume
+            Download Resume
           </a>
         </div>
         <div class="resume-highlights fade-in">
           <h3>Highlights</h3>
-          <!-- TODO: Replace each item with your real resume highlights -->
           <div class="resume-items">
             <div class="resume-item">
               <div class="resume-item-icon">🎓</div>
               <div class="resume-item-content">
-                <div class="item-title">Your Degree / Program</div>
-                <div class="item-sub">School Name · Graduation Year</div>
+                <div class="item-title">Paralegal Studies</div>
+                <div class="item-sub">Legal Research · Civil Litigation · Criminal Justice</div>
               </div>
             </div>
             <div class="resume-item">
-              <div class="resume-item-icon">💼</div>
-              <div class="resume-item-content">
-                <div class="item-title">Work Experience</div>
-                <div class="item-sub">Job Title · Employer · Dates</div>
-              </div>
-            </div>
-            <div class="resume-item">
-              <div class="resume-item-icon">📚</div>
+              <div class="resume-item-icon">📜</div>
               <div class="resume-item-content">
                 <div class="item-title">Legal Research &amp; Writing</div>
-                <div class="item-sub">Proficient in Westlaw, LexisNexis &amp; Bluebook Citation</div>
+                <div class="item-sub">Proficient in LexisNexis, vLex &amp; Bluebook Citation</div>
               </div>
             </div>
             <div class="resume-item">
-              <div class="resume-item-icon">🤝</div>
+              <div class="resume-item-icon">💻</div>
               <div class="resume-item-content">
-                <div class="item-title">Additional Skill or Achievement</div>
-                <div class="item-sub">Add a brief description here</div>
+                <div class="item-title">Legal Technology</div>
+                <div class="item-sub">MS Office Suite · Adobe Acrobat Pro · Digital Document Management</div>
+              </div>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-icon">🔒</div>
+              <div class="resume-item-content">
+                <div class="item-title">Data Privacy &amp; Document Security</div>
+                <div class="item-sub">Metadata sanitization, secure document handling &amp; client confidentiality</div>
               </div>
             </div>
           </div>
@@ -293,24 +321,13 @@
             opportunity, or just want to say hello — feel free to reach out.
           </p>
           <div class="contact-items">
-            <!-- TODO: Update or add your real contact links below -->
             <div class="contact-item">
               <div class="contact-item-icon">🐙</div>
               <div class="contact-item-text">
                 <div class="label">GitHub</div>
-                <div class="value">github.com/carlymariec</div>
+                <div class="value"><a href="https://github.com/carlymariec" target="_blank" rel="noopener noreferrer">github.com/carlymariec</a></div>
               </div>
             </div>
-            <!--
-              Add more contact items here if needed, e.g.:
-              <div class="contact-item">
-                <div class="contact-item-icon">✉️</div>
-                <div class="contact-item-text">
-                  <div class="label">Email</div>
-                  <div class="value">your@email.com</div>
-                </div>
-              </div>
-            -->
           </div>
         </div>
 
