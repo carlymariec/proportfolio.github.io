@@ -38,7 +38,7 @@ My approach to the legal profession is rooted in the belief that justice is serv
 
 ## 🌐 Portfolio
 View my professional portfolio and educational milestones here:
-[View my Professional Portfolio](https://github.com/carlymariec/proportfolio.github.io.git)
+[View my Professional Portfolio](https://carlymariec.github.io/proportfolio.github.io/)
 
 ## Contact
 Reputable legal recruiters, attorneys, or hiring managers may use the secure contact form provided on the live website to request my full, unredacted resume, writing samples, and direct contact information.
