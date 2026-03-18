@@ -121,27 +121,43 @@ scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ===== Contact form Simulation =====
+// ===== Contact form (Formspree) =====
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
+
         const btn = contactForm.querySelector('.form-submit');
+        const originalText = btn.textContent;
+
         btn.textContent = 'Sending...';
         btn.disabled = true;
 
-        setTimeout(() => {
-            btn.textContent = 'Send Request';
-            btn.disabled = false;
+        try {
+            const res = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { Accept: 'application/json' },
+            });
+
+            if (!res.ok) throw new Error('Formspree submission failed');
+
             contactForm.reset();
+
             if (formSuccess) {
                 formSuccess.style.display = 'block';
                 setTimeout(() => {
                     formSuccess.style.display = 'none';
                 }, 5000);
             }
-        }, 1500);
+        } catch (err) {
+            console.error('Form submission error:', err);
+            alert('Sorry—your message could not be sent. Please try again.');
+        } finally {
+            btn.textContent = originalText;
+            btn.disabled = false;
+        }
     });
 }
